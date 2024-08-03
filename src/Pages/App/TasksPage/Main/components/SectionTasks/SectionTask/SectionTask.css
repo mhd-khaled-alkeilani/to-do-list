@@ -1,0 +1,57 @@
+.sectoin-task {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 10px 20px;
+    padding-bottom: 10px;
+
+    border-bottom: 2px solid var(--color-dark);
+}
+.sectoin-task .task-completed {
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+    margin-right: calc(var(--margin-primary) / 3);
+    color: var(--color-secondary);
+}
+.sectoin-task .task-completed:hover {
+    color: var(--color-primary);
+}
+.wrapper-section-task {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.wrapper-task-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+}
+.wrapper-task-content h3 {
+    font-size: 1.8rem;
+    color: var(--color-primary);
+}
+.wrapper-task-content h4 {
+    font-size: 1.4rem;
+    color: var(--color-dark);
+}
+.task-option {
+    display: flex;
+    align-items: center;
+}
+.task-option .task-delete {
+    color: red;
+    border: none;
+    background-color: transparent;
+}
+.task-option .task-delete svg {
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+    margin: 0px calc(var(--margin-primary) / 2);
+    color: red;
+}

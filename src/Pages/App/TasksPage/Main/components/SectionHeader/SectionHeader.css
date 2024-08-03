@@ -1,0 +1,65 @@
+.section-header h1 {
+    margin-bottom: 20px;
+}
+
+.section-header .tools {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 22px;
+    border-bottom: 2px solid var(--color-secondary);
+}
+.section-header .selections {
+    display: flex;
+}
+
+.section-header .selections > div {
+    margin-right: 20px;
+}
+.section-header .tools button {
+    background-color: transparent;
+    border: none;
+    margin-right: calc(var(--margin-primary) / 4);
+    outline: 0;
+}
+.section-header .tools svg {
+    width: 26px;
+    height: 26px;
+}
+.section-header .date {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.section-header .date h3 {
+    display: flex;
+    align-items: center;
+}
+.section-header .date h3 svg {
+    margin-right: 10px;
+    color: var(--color-primary-light);
+}
+.section-header .date button {
+    border: none;
+    background-color: transparent;
+}
+.section-header .date button svg {
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+    margin-right: calc(var(--margin-primary) / 3);
+    color: var(--color-secondary);
+}
+.section-header .date button svg:hover {
+    color: var(--color-primary);
+}
+.section-header .react-datepicker__view-calendar-icon input {
+    padding: 6px 10px 5px 30px;
+    cursor: pointer;
+}
+
+.section-header
+    .react-datepicker__input-container
+    .react-datepicker__calendar-icon {
+    padding: 0.8rem;
+}

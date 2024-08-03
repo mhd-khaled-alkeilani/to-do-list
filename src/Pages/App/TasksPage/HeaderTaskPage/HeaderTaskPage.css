@@ -1,0 +1,53 @@
+.section-HeaderTaskPage {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--color-bg-secondary);
+    border-radius: calc(var(--border-radius) / 5);
+    padding: calc(var(--padding-primary) / 5);
+    margin-bottom: calc(var(--margin-primary) / 2);
+}
+.section-HeaderTaskPage svg {
+    color: var(--color-dark);
+    width: 26px;
+    height: 26px;
+}
+
+.section-HeaderTaskPage .toggle-aside-btn,
+.section-HeaderTaskPage .notifications {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.section-HeaderTaskPage .search {
+    display: flex;
+    align-items: center;
+    background-color: var(--color-bg-primary);
+
+    border-radius: calc(var(--border-radius));
+    padding: calc(var(--padding-primary) / 5);
+    width: 250px;
+
+    /* padding: 10px; */
+}
+
+.section-HeaderTaskPage .search input::placeholder {
+    color: var(--color-dark);
+    font-weight: 600;
+}
+.section-HeaderTaskPage .search svg {
+    color: var(--color-dark);
+    margin-right: calc(var(--margin-primary) / 10);
+    width: 14px;
+    height: 14px;
+}
+
+.section-HeaderTaskPage .search input {
+    border: 0;
+    font-weight: 600;
+    background-color: var(--color-bg-primary);
+    color: var(--color-dark);
+    outline: none;
+}
+
+.section-HeaderTaskPage .notifications svg {
+}

@@ -1,0 +1,19 @@
+main .section-hero {
+    display: flex;
+    min-height: 80vh;
+    align-items: center;
+}
+main .title-hero {
+    /* text-wrap: balance; */
+}
+main .title-hero h3 {
+    text-wrap: balance;
+    font-size: 1.2rem;
+}
+main h1 span {
+    color: var(--color-active);
+    margin-left: 5px;
+}
+.hero-img img {
+    width: 100%;
+}

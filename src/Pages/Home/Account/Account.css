@@ -1,0 +1,26 @@
+.container-form {
+    display: flex;
+    justify-content: center;
+}
+.card-form {
+    border: none;
+    min-width: 400px;
+}
+.card .card-body h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+.container-form .card-form button {
+    width: 100%;
+}
+.container-form .more-link {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.action-account {
+    margin-top: 30px;
+}
+.action-account button {
+    margin-right: 20px;
+}

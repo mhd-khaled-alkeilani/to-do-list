@@ -1,0 +1,12 @@
+.select-priority {
+    display: flex;
+    flex-direction: row;
+    /* margin-top: calc(var(--margin-primary) / 2); */
+}
+.select-priority select {
+    margin-right: calc(var(--margin-primary) / 5);
+}
+
+.select-date input{
+    cursor: pointer;
+}
