@@ -30,8 +30,6 @@ const App = () => {
                     }
                 >
                     <Routes>
-                        <Route path='/' element={<Test />} />
-
                         <Route element={<ProtectedSignin />}>
                             <Route element={<RouteHome />}>
                                 <Route path='/' element={<Home />} />
