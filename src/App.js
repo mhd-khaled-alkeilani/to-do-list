@@ -46,6 +46,7 @@ const App = () => {
                         </Route>
                         <Route path='/app' element={<ProtectedRoute />}>
                             <Route index element={<Test />} />
+                            <Route path='/app/profile' element={<Test />} />
                         </Route>
                     </Routes>
                 </Suspense>
