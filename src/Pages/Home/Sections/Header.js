@@ -4,7 +4,7 @@ import { useAuth } from '../../../contexts/AuthContext';
 import './Header.css';
 import logo from '../../../assets/imgs/logo.svg';
 import { Container, Nav, Navbar, Offcanvas } from 'react-bootstrap';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 const Header = () => {
     const { clearError } = useAuth();
@@ -18,13 +18,17 @@ const Header = () => {
         }
     };
 
-    window.addEventListener('scroll', changeHeaderBG);
+    useEffect(() => {
+        window.addEventListener('scroll', changeHeaderBG);
+        return () => {
+            window.removeEventListener('scroll', changeHeaderBG);
+        };
+    }, []);
 
     return (
         <Navbar
             as='header'
-            id='header'
-            className={HeaderScroll ? 'header-scroll' : ''}
+            className={HeaderScroll ? 'header header-scroll' : 'header'}
             expand='md'
             collapseOnSelect
         >
@@ -32,7 +36,6 @@ const Header = () => {
                 <Navbar.Brand
                     className='col-sm-3'
                     as='div'
-                    to='/'
                     onClick={clearError}
                 >
                     <Nav.Link as={Link} to='/' href onClick={clearError}>
@@ -51,13 +54,6 @@ const Header = () => {
                             <div className='navbar-link col-sm-8 justify-content-center'>
                                 <Nav.Link
                                     as={NavLink}
-                                    className={({ isActive, isPending }) =>
-                                        isPending
-                                            ? 'pending'
-                                            : isActive
-                                            ? 'active'
-                                            : ''
-                                    }
                                     to='/'
                                     href
                                     onClick={clearError}
@@ -66,13 +62,6 @@ const Header = () => {
                                 </Nav.Link>
                                 <Nav.Link
                                     as={NavLink}
-                                    className={({ isActive, isPending }) =>
-                                        isPending
-                                            ? 'pending'
-                                            : isActive
-                                            ? 'active'
-                                            : ''
-                                    }
                                     to='/how-it-work'
                                     href
                                     onClick={clearError}
@@ -81,13 +70,6 @@ const Header = () => {
                                 </Nav.Link>
                                 <Nav.Link
                                     as={NavLink}
-                                    className={({ isActive, isPending }) =>
-                                        isPending
-                                            ? 'pending'
-                                            : isActive
-                                            ? 'active'
-                                            : ''
-                                    }
                                     to='/company'
                                     href
                                     onClick={clearError}
@@ -95,13 +77,6 @@ const Header = () => {
                                     Company
                                 </Nav.Link>
                                 <Nav.Link
-                                    className={({ isActive, isPending }) =>
-                                        isPending
-                                            ? 'pending'
-                                            : isActive
-                                            ? 'active'
-                                            : ''
-                                    }
                                     as={NavLink}
                                     to='/contacts'
                                     href
@@ -110,8 +85,10 @@ const Header = () => {
                                     Contacts
                                 </Nav.Link>
                             </div>
+                            <hr />
                             <div className='navbar-link  col-sm-4 justify-content-end'>
                                 <Nav.Link
+                                    id='link-login'
                                     as={Link}
                                     to='login'
                                     href

@@ -1,5 +1,6 @@
 import { useRef } from 'react';
 import { Link } from 'react-router-dom';
+import heroLoginImg from '../../../assets/imgs/hero-login.svg';
 
 import { Form, Card, Button, Alert, Container } from 'react-bootstrap';
 
@@ -37,8 +38,8 @@ export default function Signup() {
 
     return (
         <Container className='container-form'>
-            <Card className='card-form'>
-                <Card.Body>
+            <div class='section-signup row'>
+                <div className='sectoin-header'>
                     <h2>Sign Up</h2>
                     {error && (
                         <Alert variant='danger'>
@@ -46,47 +47,60 @@ export default function Signup() {
                             {errorRedirectLink}
                         </Alert>
                     )}
-                </Card.Body>
-                <Form onSubmit={handleSubmit}>
-                    <Form.Group>
-                        <Form.Label>Display Name:</Form.Label>
-                        <Form.Control
-                            type='text'
-                            ref={DisplayNameRef}
-                            required
-                        />
-                    </Form.Group>
-                    <Form.Group>
-                        <Form.Label>Email</Form.Label>
-                        <Form.Control type='email' ref={emailRef} required />
-                    </Form.Group>
-                    <Form.Group>
-                        <Form.Label>Password</Form.Label>
-                        <Form.Control
-                            type='password'
-                            ref={passwordRef}
-                            required
-                        />
-                    </Form.Group>
-                    <Form.Group className='mb-4'>
-                        <Form.Label>Password Confirmation</Form.Label>
-                        <Form.Control
-                            type='password'
-                            ref={passwordConfirmRef}
-                            required
-                        />
-                    </Form.Group>
-                    <Button disabled={loading} type='submit'>
-                        Sing Up
-                    </Button>
-                </Form>
-                <div className='more-link'>
-                    Already have an account?{' '}
-                    <Link to='/login' onClick={clearError}>
-                        Log In
-                    </Link>
                 </div>
-            </Card>
+                <Card className='card-form col-lg-7'>
+                    <Form onSubmit={handleSubmit}>
+                        <Form.Group className='input-form'>
+                            <Form.Label>User Name:</Form.Label>
+                            <Form.Control
+                                placeholder='Enter your User Name...'
+                                type='text'
+                                ref={DisplayNameRef}
+                                required
+                            />
+                        </Form.Group>
+                        <Form.Group className='input-form'>
+                            <Form.Label>Email</Form.Label>
+                            <Form.Control
+                                placeholder='Enter your email...'
+                                type='email'
+                                ref={emailRef}
+                                required
+                            />
+                        </Form.Group>
+                        <Form.Group className='input-form'>
+                            <Form.Label>Password</Form.Label>
+                            <Form.Control
+                                type='password'
+                                placeholder='Enter your password...'
+                                ref={passwordRef}
+                                required
+                            />
+                        </Form.Group>
+                        <Form.Group className='input-form'>
+                            <Form.Label>Password Confirmation</Form.Label>
+                            <Form.Control
+                                type='password'
+                                placeholder='Enter your password confirmation...'
+                                ref={passwordConfirmRef}
+                                required
+                            />
+                        </Form.Group>
+                        <Button disabled={loading} type='submit'>
+                            Sing Up
+                        </Button>
+                    </Form>
+                    <div className='more-link'>
+                        Already have an account?{' '}
+                        <Link to='/login' onClick={clearError}>
+                            Log In
+                        </Link>
+                    </div>
+                </Card>
+                <div className='hero-login-img col-lg-5'>
+                    <img src={heroLoginImg} alt='' />
+                </div>
+            </div>
         </Container>
     );
 }
