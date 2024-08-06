@@ -1,14 +1,20 @@
-import './Account.css';
 import { useRef } from 'react';
 import { Link } from 'react-router-dom';
-import { Form, Card, Button, Alert, Container } from 'react-bootstrap';
 import { useAuth } from '../../../contexts/AuthContext';
+import { useMediaQuery } from 'react-responsive';
+
+import { Form, Card, Button, Alert, Container } from 'react-bootstrap';
 import heroLoginImg from '../../../assets/imgs/hero-login.svg';
+
 export default function Login() {
     const { loading, login, error, clearError, errorRedirectLink } = useAuth();
 
     const emailRef = useRef();
     const passwordRef = useRef();
+
+    const isBigScreen = useMediaQuery({
+        query: '(min-width: 992px)',
+    });
 
     async function handleSubmit(e) {
         e.preventDefault();
@@ -17,7 +23,7 @@ export default function Login() {
 
     return (
         <Container className='container-form'>
-            <div class='section-login row'>
+            <div className='section-login row'>
                 <div className='sectoin-header'>
                     <h2>Log In</h2>
                     {error && (
@@ -64,9 +70,11 @@ export default function Login() {
                         </Link>
                     </div>
                 </Card>
-                <div className='hero-login-img col-lg-5'>
-                    <img src={heroLoginImg} alt='' />
-                </div>
+                {isBigScreen && (
+                    <div className='hero-login-img col-lg-5'>
+                        <img src={heroLoginImg} alt='' />
+                    </div>
+                )}
             </div>
         </Container>
     );

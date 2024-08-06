@@ -4,19 +4,19 @@
 .container-form a:hover {
     color: var(--color-active);
 }
-.container-form .sectoin-header {
-    margin-bottom: calc(var(--margin-primary) / 2);
-}
+
 .container-form .sectoin-header h2 {
     font-size: 2.4rem;
     color: var(--color-darkest);
+    text-align: center;
 }
 .card-form {
     border: none;
     background-color: transparent;
     margin-top: calc(var(--margin-primary) / 2);
 }
-.card-form form .input-form {
+
+form .input-form {
     margin-bottom: calc(var(--margin-primary) / 2);
 }
 
@@ -26,6 +26,13 @@
     background-color: var(--color-active);
     border-color: var(--color-active);
     margin-bottom: calc(var(--margin-primary) / 2);
+    width: 100%;
+}
+.section-signup form .input-form {
+    margin-bottom: calc(var(--margin-primary) / 5);
+}
+.section-signup form button {
+    margin-bottom: calc(var(--margin-primary) / 5);
 }
 .container-form .more-link {
     margin-bottom: calc(var(--margin-primary) / 5);
@@ -41,6 +48,17 @@
     justify-content: end;
 }
 .hero-login-img img {
-    width: 100%;
+    width: 80%;
     height: auto;
+}
+@media only screen and (min-width: 768px) {
+    .container-form .sectoin-header {
+        margin-bottom: calc(var(--margin-primary) / 2);
+    }
+    .container-form .sectoin-header h2 {
+        text-align: left;
+    }
+    .container-form form button {
+        width: fit-content;
+    }
 }

@@ -57,6 +57,7 @@ header #link-signup {
     border: 2px solid var(--color-active);
     border-radius: calc(var(--border-radius) / 5);
     padding: 0 30px;
+    margin-right: 0;
 }
 header #link-signup:hover {
     background-color: var(--color-active);
@@ -67,7 +68,7 @@ header #link-login:focus {
     color: var(--color-dark);
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 992px) {
     .header {
         padding: calc(var(--padding-primary) / 2) 0;
     }

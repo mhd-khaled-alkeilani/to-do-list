@@ -1,10 +1,11 @@
 import { useRef } from 'react';
 import { Link } from 'react-router-dom';
-import heroLoginImg from '../../../assets/imgs/hero-login.svg';
+import { useAuth } from '../../../contexts/AuthContext';
+import { useMediaQuery } from 'react-responsive';
 
 import { Form, Card, Button, Alert, Container } from 'react-bootstrap';
 
-import { useAuth } from '../../../contexts/AuthContext';
+import heroLoginImg from '../../../assets/imgs/hero-login.svg';
 
 export default function Signup() {
     const {
@@ -21,6 +22,10 @@ export default function Signup() {
     const emailRef = useRef();
     const passwordRef = useRef();
     const passwordConfirmRef = useRef();
+
+    const isBigScreen = useMediaQuery({
+        query: '(min-width: 992px)',
+    });
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -97,9 +102,11 @@ export default function Signup() {
                         </Link>
                     </div>
                 </Card>
-                <div className='hero-login-img col-lg-5'>
-                    <img src={heroLoginImg} alt='' />
-                </div>
+                {isBigScreen && (
+                    <div className='hero-login-img col-lg-5'>
+                        <img src={heroLoginImg} alt='' />
+                    </div>
+                )}
             </div>
         </Container>
     );

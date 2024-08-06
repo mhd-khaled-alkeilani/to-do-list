@@ -1,7 +1,18 @@
 main .section-hero {
     display: flex;
-    min-height: 80vh;
+    flex-direction: column;
     align-items: center;
+    padding-top: calc(var(--padding-primary) / 2);
+}
+main .section-hero > div {
+    margin-bottom: var(--margin-primary);
+}
+main .section-hero .title-hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 main h1 {
     font-size: 3.6rem;
@@ -55,4 +66,18 @@ main .section-hero #btn-signup:hover {
 
 .hero-img img {
     width: 100%;
+}
+@media only screen and (min-width: 768px) {
+    main .section-hero {
+        flex-direction: row;
+
+        padding-top: calc(var(--padding-primary) * 2);
+    }
+    main .section-hero > div {
+        flex-direction: column;
+    }
+    main .section-hero .title-hero {
+        align-items: flex-start;
+        text-align: left;
+    }
 }

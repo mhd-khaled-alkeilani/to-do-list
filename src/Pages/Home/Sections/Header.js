@@ -29,7 +29,7 @@ const Header = () => {
         <Navbar
             as='header'
             className={HeaderScroll ? 'header header-scroll' : 'header'}
-            expand='md'
+            expand='lg'
             collapseOnSelect
         >
             <Container>
@@ -50,7 +50,7 @@ const Header = () => {
                 >
                     <Offcanvas.Header closeButton />
                     <Offcanvas.Body>
-                        <Nav className='flex-grow-1 pe-3'>
+                        <Nav className='flex-grow-1'>
                             <div className='navbar-link col-sm-8 justify-content-center'>
                                 <Nav.Link
                                     as={NavLink}
