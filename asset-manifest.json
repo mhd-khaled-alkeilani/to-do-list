@@ -1,12 +1,12 @@
 {
   "files": {
     "main.css": "/to-do-list/static/css/main.9b200056.css",
-    "main.js": "/to-do-list/static/js/main.8555d33e.js",
+    "main.js": "/to-do-list/static/js/main.3b083ba8.js",
     "static/js/990.142682be.chunk.js": "/to-do-list/static/js/990.142682be.chunk.js",
     "static/js/683.6f217cd8.chunk.js": "/to-do-list/static/js/683.6f217cd8.chunk.js",
     "static/css/99.d2d82ee7.chunk.css": "/to-do-list/static/css/99.d2d82ee7.chunk.css",
     "static/js/99.661fd3ad.chunk.js": "/to-do-list/static/js/99.661fd3ad.chunk.js",
-    "static/css/633.aabe1476.chunk.css": "/to-do-list/static/css/633.aabe1476.chunk.css",
+    "static/css/633.11ba67d9.chunk.css": "/to-do-list/static/css/633.11ba67d9.chunk.css",
     "static/js/633.21c1aace.chunk.js": "/to-do-list/static/js/633.21c1aace.chunk.js",
     "static/js/719.baef4604.chunk.js": "/to-do-list/static/js/719.baef4604.chunk.js",
     "static/css/705.5d414d94.chunk.css": "/to-do-list/static/css/705.5d414d94.chunk.css",
@@ -21,12 +21,12 @@
     "static/media/logo.svg": "/to-do-list/static/media/logo.e7f1c6517e8cb29bc20566354e753590.svg",
     "index.html": "/to-do-list/index.html",
     "main.9b200056.css.map": "/to-do-list/static/css/main.9b200056.css.map",
-    "main.8555d33e.js.map": "/to-do-list/static/js/main.8555d33e.js.map",
+    "main.3b083ba8.js.map": "/to-do-list/static/js/main.3b083ba8.js.map",
     "990.142682be.chunk.js.map": "/to-do-list/static/js/990.142682be.chunk.js.map",
     "683.6f217cd8.chunk.js.map": "/to-do-list/static/js/683.6f217cd8.chunk.js.map",
     "99.d2d82ee7.chunk.css.map": "/to-do-list/static/css/99.d2d82ee7.chunk.css.map",
     "99.661fd3ad.chunk.js.map": "/to-do-list/static/js/99.661fd3ad.chunk.js.map",
-    "633.aabe1476.chunk.css.map": "/to-do-list/static/css/633.aabe1476.chunk.css.map",
+    "633.11ba67d9.chunk.css.map": "/to-do-list/static/css/633.11ba67d9.chunk.css.map",
     "633.21c1aace.chunk.js.map": "/to-do-list/static/js/633.21c1aace.chunk.js.map",
     "719.baef4604.chunk.js.map": "/to-do-list/static/js/719.baef4604.chunk.js.map",
     "705.5d414d94.chunk.css.map": "/to-do-list/static/css/705.5d414d94.chunk.css.map",
@@ -39,6 +39,6 @@
   },
   "entrypoints": [
     "static/css/main.9b200056.css",
-    "static/js/main.8555d33e.js"
+    "static/js/main.3b083ba8.js"
   ]
 }
