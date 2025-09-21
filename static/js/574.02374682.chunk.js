@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunktodolist=self.webpackChunktodolist||[]).push([[574],{6574:(s,t,e)=>{e.r(t),e.d(t,{default:()=>c});e(5043);var r=e(3216),o=e(5016),u=e(579);const c=()=>{const{currentUser:s}=(0,o.A)();return s?(0,u.jsx)(r.C5,{to:"/"}):(0,u.jsx)(r.sv,{})}}}]);
+//# sourceMappingURL=574.02374682.chunk.js.map
