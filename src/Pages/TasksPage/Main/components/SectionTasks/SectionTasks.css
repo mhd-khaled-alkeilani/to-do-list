@@ -1,0 +1,5 @@
+.sectoin-tasks {
+    display: flex;
+    flex-direction: column;
+    margin-top: calc(var(--margin-primary) / 5);
+}

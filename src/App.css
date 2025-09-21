@@ -1,0 +1,11 @@
+.spinner-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+body {
+    background-color: var(--color-bg-primary);
+    /* margin: calc(var(--margin-primary) / 2); */
+    font-size: var(--font-default);
+}

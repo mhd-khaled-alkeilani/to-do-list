@@ -1,0 +1,26 @@
+header {
+    background-color: #00a0d570;
+}
+header .navbar-brand {
+    font-size: 1.6rem;
+    font-weight: var(--font-weight-bolder);
+    font-style: italic;
+    color: var(--color-primary);
+}
+.navbar-brand:focus {
+    color: var(--color-primary);
+}
+
+.navbar-brand:hover {
+    color: var(--color-action);
+}
+.nav-link {
+    color: var(--color-darkest);
+    font-size: 1.2rem;
+}
+.nav-link:focus {
+    color: var(--color-darkest);
+}
+.navbar-nav .nav-link.show {
+    color: var(--color-darkest);
+}
